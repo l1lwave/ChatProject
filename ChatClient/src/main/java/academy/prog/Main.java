@@ -19,6 +19,11 @@ public class Main {
 				return;
 			}
 
+			if(password.length() <= 5){
+				System.out.println("Password must be >5 symbols");
+				return;
+			}
+
 
 			Login loginObj = new Login(login, password);
 			if(!loginObj.loginStatus()){
